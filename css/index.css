@@ -1,0 +1,352 @@
+/*=====================main style==============*/
+.mainPage {
+	left: 70px;
+	width: 15px;
+}
+.swiper2Page span{
+	width: 51px;
+	height: 11px;
+}
+.mainbox > div{
+	overflow: hidden;
+}
+
+/*=================home style=================*/
+.home{
+	/*background: url(../img/home3-3.jpg) no-repeat center;
+	background-size: cover;*/
+}
+
+/*=================consult style=============*/
+.swiper2{
+	margin-bottom: 86px;
+    height: calc(100% - 86px);
+}
+.swiper2 .swiper-slide{
+	padding-top: 0;
+	height: 100% !important;
+}
+
+/*================museum style=================*/
+
+.museum .imgs{
+	width: 100%;
+	display: flex;
+	margin-bottom: 86px;
+	height: calc(100% - 86px);
+	position: relative;
+	color: #fff;
+}
+
+.museum .mu_left{
+	position: absolute;
+	left: 0;
+	width: 66.5%;
+	height: 100%;
+}
+.mu_left .mu_top,.mu_left .mu_bottom{
+	width: 100%;
+	height: 49.5%;
+	position: absolute;
+	display: flex;
+}
+.museum .imgs a{
+	display: block;
+	height:100%;
+	transition: .3s;
+	transform: scale(1);
+
+}
+.museum .imgs span{
+	position: absolute;
+	font-size: 30px;
+	bottom:44px;
+}
+.museum .mu_top span{
+	/*top:44px;*/
+	right: 80px;
+}
+.mu_left .mu_top > div{
+	height: 100%;
+	position: relative;
+}
+.mu_left .mu_bottom > div{
+	height: 100%;
+	position: relative;
+}
+.mu_left .mu_top .img1{
+	width: 59.5%;
+	overflow: hidden;
+}
+.mu_left .mu_top .img1 a{
+	background: url("../img/主页3-1.jpg") no-repeat center;
+	background-size: cover;
+}
+.mu_left .mu_top .img2{
+	width: 39.5%;
+	margin-left: 1%;
+	overflow: hidden;
+}
+.mu_left .mu_top .img2 a{
+	background: url("../img/主页3-3.jpg") no-repeat center;
+	background-size: cover;
+}
+.mu_left .mu_bottom .img3{
+	width: 39.5%;
+	overflow: hidden;
+}
+.mu_left .mu_bottom .img3 a{
+	background: url("../img/主页3-4.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.mu_left .mu_bottom .img3 span{
+	right: 20px;
+}
+.mu_left .mu_bottom .img4{
+	width: 69.5%;
+	margin-left: 1%;
+	overflow: hidden;
+}
+.mu_left .mu_bottom .img4 a{
+	background: url("../img/主页3-5.jpg") no-repeat center;
+	background-size: cover;
+}
+.mu_left .mu_bottom{
+	bottom: 0;
+}
+.mu_left .mu_bottom .img4 span{
+	right: 47%;
+}
+.museum .mu_right{
+	position: absolute;
+	right: 0;
+	width: 33%;
+	height: 100%;
+	overflow: hidden;
+}
+.museum .mu_right .img5{
+	height: 100%;
+	overflow: hidden;
+}
+.museum .mu_right .img5 img{
+	height: 100%;
+}
+.museum .mu_right .img5 a{
+	background: url("../img/主页3-2.jpg") no-repeat center;
+	background-size: cover;
+}
+.museum .mu_right .img5 span{
+	right: 37%;
+	bottom: 30px;
+}
+/*.museum .imgs img{
+	object-fit:fill;
+	min-height: 100%;
+	transition: .3s;
+}*/
+.museum .imgs .imga:hover a{
+	transform: scale(1.1);
+}
+
+
+/*=================activity style=============*/
+.activity > div{
+	height: calc(100% - 86px);
+	width: 49.5%;
+	position: relative;
+	margin-bottom:86px;
+}
+.activity .time{
+	left: 0;
+	background: url(../img/home4-2.jpg) no-repeat center;
+	background-size: cover;
+}
+.activity >div > div{
+	background: rgba(255,255,255,0.8);
+	margin:100px 100px 0;
+	height: calc(100% - 100px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.activity >div > div h2{
+	color: #ff0000;
+	font-size: 30px;
+	margin-bottom: 42px;
+}
+.activity >div > div p{
+	line-height: 34px;
+	font-size: 18px;
+}
+.activity >div > div a{
+	display: block;
+	width:204px;
+	height: 80px;
+	background: #d60100;
+	line-height: 80px;
+	margin: 48px auto 0;
+	color: #fff;
+	font-size: 30px;
+}
+.activity .member{
+	right: 0;
+	background: url(../img/home4-1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+
+/*==================sidebar style=============*/
+.sidebar{
+	position: fixed;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 105px;
+	height: 412px;
+	background:#000;
+	z-index: 999;
+}
+.sidebar ul{
+	height: 100%;
+	flex-direction:column;
+	justify-content: space-around;
+	color: #fff;
+	/*z-index: 111;*/
+}
+.sidebar ul li{
+	cursor: pointer;
+	font-size: 20px;
+	width:100%;
+	height: 33.333%;
+	position: relative;
+}
+.sidebar ul li.center{
+	flex-direction: column;
+	justify-content: center;
+}
+.sidebar ul li:hover{
+	background: #ac011d;
+}
+.sidebar ul li a{
+	color: #fff;
+}
+.sidebar ul li i{
+	display: block;
+	width:100%;
+	height: 40px;
+}
+.sidebar p{
+    position: absolute;
+    background: #fff;
+    right: -200px;
+    padding: 5px;
+    width: 130px;
+    height: 145px;
+    transition: .3s;
+    z-index:998;
+    top: 50%;
+	transform: translateY(-50%);
+}
+.sidebar p.center{
+	flex-direction: column;
+	justify-content: center;
+}
+.sidebar p img{
+	width: 120px;
+}
+.sidebar p span{
+	display: block;
+    font-size: 14px;
+    color: #101010;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+.sidebar .wx:hover .wx_ma{
+	right: 105px;
+}
+.sidebar .shoop:hover .shoop_ma{
+	right: 105px;
+}
+
+
+/*==================footer style=============*/
+.footer{
+	width: 100%;
+	height: 86px;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	font-size: 18px;
+	color: #afafaf;
+}
+.foot_left{
+	padding-left: 60px;
+	position: relative;
+}
+.foot_right{
+	padding-right: 75px;
+}
+.foot_right li{
+	margin: 0 46px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.foot_right .iconfont{
+	display: inline-block;
+	font-size: 24px !important;
+	margin-right: 6px;
+	color: #afafaf;
+}
+.foot_left .button{
+	position: absolute;
+	bottom: -10px;
+	width: 0;
+	border-bottom:25px solid #d0d0c6;
+	border-left:30px solid transparent;
+	border-right: 30px solid transparent;
+}
+
+
+
+/*==================alert style=============*/
+.foot_alert{
+	height: 100px;
+	width:100%;
+	background: #101010;
+	position: fixed;
+	bottom: -100px;
+	z-index: 998;
+	transition: .3s;
+}
+.foot_alert  ul{
+	margin: 10px 50px;
+}
+.foot_alert  ul  li{
+	height: 30px;
+	border-bottom: 1px #FFFFFF solid;
+	color: #fff;
+	justify-content: flex-start;
+}
+.foot_alert  ul li a{
+	cursor: pointer;
+	color: #fff;
+	margin: 0 5px;
+}
+
+/*媒体查询*/
+@media screen and (max-width:1366px){
+	.foot_right {
+		padding-right: 16px;
+	}
+	.foot_right li{
+		margin: 0 15px;
+	}
+}
+
+

@@ -1,0 +1,47 @@
+body{
+	padding: 0;
+}
+#header{
+	position: relative;
+}
+.main{
+	width: 100%;
+}
+/*================banner style=============*/
+.banner{
+	width: 100%;
+	height: 600px;
+	background: url(../img/会员.jpg) no-repeat center;
+	background-size:cover;
+}
+/*=================main style==============*/
+.mainbox{
+	width: 1200px;
+	margin: 103px auto;
+}
+.mainbox h2{
+	font-size:30px;
+	/*height: 60px;
+	line-height: 60px;*/
+	text-align: center;
+}
+.mainbox > div{
+	margin-top: 45px;
+}
+.mainbox .center{
+	align-items: flex-start;
+}
+.mainbox > div > div{
+	width: 45%;
+}
+.mainbox h3{
+	color: #e25147;
+	font-size: 26px;
+	/*height: 40px;
+	line-height: 40px;*/
+	margin-bottom: 24px;
+}
+.mainbox p,.mainbox li{
+	line-height: 34px;
+	font-size: 18px;
+}

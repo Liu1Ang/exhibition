@@ -1,0 +1,134 @@
+body {
+	padding: 0;
+}
+
+#header {
+	position: relative;
+}
+
+.main {
+	width: 100%;
+}
+
+
+/*================banner style=============*/
+
+.banner {
+	width: 100%;
+	height: 600px;
+	background: url(../../img/activity_banner.jpg) no-repeat center;
+	background-size: cover;
+}
+
+
+/*=================main style==============*/
+
+.mainbox {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 43px;
+}
+.mainbox .loading{
+	width: 100%;
+	height: 30px;
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+	margin: 20px 0;
+}
+.mainbox p {
+	text-indent: 2em;
+	font-family: "楷体" !important;
+}
+.mainbox p span{
+	font-size: 18px !important;
+	font-family: "楷体" !important;
+}
+.mainbox>div {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.mainbox>div:last-of-type {
+	border-bottom: 0;
+}
+
+.mainbox .box_one {
+	padding: 38px 60px;
+}
+
+.mainbox .box_one.center {
+	align-items: flex-start;
+}
+
+.mainbox .box_one i {
+	width: 383px;
+	height: 258px;
+	display: block;
+	overflow: hidden;
+}
+
+.mainbox .box_one div {
+	width: calc(100% - 383px);
+	margin-left: 36px;
+}
+
+.mainbox .box_one h2 {
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: normal;
+	font-weight: bold;
+}
+
+.mainbox .box_one p {
+	margin: 14px 0;
+	line-height: 20px;
+}
+
+.mainbox .box_one .inIng {
+	display: initial;
+	color: #b4d889;
+}
+
+.mainbox .box_two {
+	text-align: center;
+	padding: 40px 60px;
+}
+
+.mainbox h4 {
+	text-align: left;
+	font-size: 20px;
+}
+
+.mainbox .box_two p {
+	padding-top: 55px;
+}
+
+.mainbox .box_two i {
+	padding-top: 43px;
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.mainbox .box_two i img {
+	display: block;
+	width: 99%;
+	margin: 0 auto;
+}
+
+.mainbox .box_three {
+	padding-top: 60px;
+}
+
+.mainbox .box_three article {
+	width: 95%;
+	margin: 0 auto;
+	padding: 47px 0;
+	line-height: 30px;
+}
+
+.mainbox .box_three article img {
+	width: 80%;
+	margin: 30px auto;
+}

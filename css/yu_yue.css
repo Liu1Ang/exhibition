@@ -1,0 +1,54 @@
+body{
+	padding: 0;
+}
+#header{
+	position: relative;
+}
+.main{
+	width: 100%;
+}
+/*================banner style=============*/
+.banner{
+	width: 100%;
+	height: 600px;
+	background: url(../img/预约1.jpg) no-repeat center;
+	background-size:cover;
+}
+/*=================main style==============*/
+.mainbox{
+	width: 1200px;
+	margin: 0 auto 200px;
+}
+.mainbox .box_one{
+	padding: 104px 50px 27px;
+	border-bottom: 1px dashed #dcdcdc;
+	text-align: center;
+}
+.mainbox .box_one h2{
+	color: #ff0000;
+	margin-bottom: 17px;
+}
+.mainbox p{
+	color: #7c827d;
+	line-height: 34px;
+	text-align: left;
+	font-size: 20px;
+}
+.mainbox .box_two{
+	padding: 72px 0;
+	text-align: center;
+}
+.mainbox .box_two p{
+	text-align: center;
+	margin-bottom:28px;
+}
+.mainbox .box_two i{
+	width: 279px;
+	height: 279px;
+	display: inline-block;
+	overflow: hidden;
+}
+.mainbox .box_two i img{
+	display: block;
+	width: 99%;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>展厅-文创详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+		<script src="../commit/js/jquery-3.3.1.js"></script>
+
+		<link rel="stylesheet" href="../commit/css/base.css">
+		<link rel="stylesheet" href="../commit/css/header.css">
+		<!--<link rel="stylesheet" href="../css/wenCreative.css">-->
+		<link rel="stylesheet" href="../commit/css/footer.css">
+		<style type="text/css">
+			#header {
+				position: relative;
+			}
+			
+			.main {
+				width: 100%;
+			}
+			/*================banner style=============*/
+			
+			.banner {
+				width: 100%;
+				height: 650px;
+				background: url(../img/wen_banner.jpg) no-repeat center;
+				background-size: cover;
+			}
+			
+			.mainbox {
+				width: 1000px;
+				margin: 30px auto;
+				
+			}
+			#mainbox{
+				width: 680px;
+			}
+			.mainbox h3 {
+				color: #666;
+				margin-bottom: 30px;
+			}
+			
+			.mainbox time {
+				display: block;
+				font-size: 14px;
+				color: #999;
+				margin-bottom: 20px;
+			}
+			
+			.mainbox p {
+				text-indent: 2em;
+			}
+			
+			.mainbox p,
+			.mainbox p span {
+				font-size: 16px !important;
+				font-family: "黑体", "微软雅黑" !important;
+				line-height: 200% !important;
+			}
+			
+			.mainbox img {
+				display: block;
+				width: 100% !important;
+				height: 100% !important;
+				margin: 10px auto;
+			}
+			/*商城二维码*/
+			
+			.shoop {
+				position: fixed;
+				display: none;
+				top: 100px;
+				right: 20%;
+				width: 200px;
+				background: #FFFFFF;
+				text-align: center;
+			}
+			
+			.shoop i {
+				display: block;
+				padding: 5px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--header start-->
+			<div class="header center" id="header">
+				<div class="header_left">
+					<h1><img src="../img/佛缘之路logo.png"/></h1>
+				</div>
+				<nav class="header_right">
+					<ul class="center">
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="consult.html">资讯</a>
+						</li>
+						<li>
+							<a href="museum.html">馆藏</a>
+						</li>
+						<li class="active">
+							<a href="wenCreative.html">文创</a>
+						</li>
+						<li>
+							<a href="activity.html">活动</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!--header end-->
+			<!--banner start-->
+			<div class="banner"></div>
+			<!--banner end-->
+			<!--内容开始-->
+			<div class="mainbox center">
+				<div id="mainbox"></div>
+			</div>
+			<!--尾部开始-->
+			<div class="footer">
+				<div class="foot_top">
+					<div class="top_nav center">
+						<p>友情链接：</p>
+						<a href="https://fo.ifeng.com/" target="_blank"> 凤凰佛教 </a>
+						<a href="http://www.fblife.com/" target="_blank"> 越野e族 </a>
+						<a href="https://new.qq.com/ch/cul_ru/" target="_blank"> 腾讯新闻 </a>
+						<a href="http://fo.sina.com.cn/" target="_blank"> 新浪佛学 </a>
+						<a href="http://www.fobao.cn/" target="_blank"> 佛宝网 </a>
+					</div>
+				</div>
+				<div class="foot_bottom center">
+					<dl>
+						<dt>发起单位</dt>
+						<dd>
+							<a>中国生物多样性保护与绿色发展基金会</a>
+						</dd>
+						<dd>
+							<a>蓝毗尼发展委员会</a>
+						</dd>
+						<dd>
+							<a>深圳市我有爱文化传播有限公司</a>
+						</dd>
+						<dd>
+							<a>凤凰网佛教频道</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>关于我们</dt>
+						<dd>
+							<a>佛缘之路-朝圣祈福万里行</a>
+						</dd>
+						<dd>
+							<a>佛缘之路-我心有爱</a>
+						</dd>
+						<dd>
+							<a>联系我们</a>
+						</dd>
+						<dd>
+							<a>加入我们</a>
+						</dd>
+						<dd>
+							<a>朝圣路线</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>全程媒体报道</dt>
+						<dd>
+							<a>凤凰网佛教频道</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="last">关注我们</dt>
+						<dd>
+							<div>
+								<img src="../img/订阅号.jpg" />
+								<a>佛缘之路订阅号</a>
+							</div>
+							<!--<div>
+								<img src="../../img/服务号.jpg"/>
+								<a href="#">佛缘之路服务号</a>
+							</div>-->
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!--尾部结束-->
+		</div>
+		<!--商城二维码-->
+		<div class="shoop" id="shoop">
+			<i>
+				<img src="../img/wfl.jpg" alt="" />
+			</i>
+		</div>
+		<!--返回-->
+		<div class="scrolltop" title="返回顶部">︽</div>
+		<script type="text/javascript">
+			$(function() {
+				function Time_add(time) {
+					if(time < 10) {
+						return time = '0' + time
+					} else {
+						return time = time
+					}
+				}
+				Date.prototype.toTime = function() {
+					return this.getFullYear() + '-' + Time_add((this.getMonth() + 1)) + '-' + Time_add(this.getDate())
+				};
+				var id = sessionStorage.getItem('wen_id');
+				//				console.log(id);
+				$.ajax({
+					type: "get",
+					url: "http://www.foyuanzhilu.cn/pavilion/news?c=" + id,
+					async: true,
+					dataStype: "json",
+					success: function(data) {
+						console.log(data);
+						html(data.list[0])
+					}
+				});
+
+				function html(data) {
+					var created_at = new Date(data.created_at * 1000);
+					var html = '<h3>' + data.title + '</h3>' + '<time>' +
+						created_at.toTime() + '</time>' +
+						data.content;
+					$('#mainbox').html(html)
+				}
+				$(window).on('scroll', function() {
+					if($(window).scrollTop() > 700) {
+						$('#shoop').fadeIn()
+					} else {
+						$('#shoop').fadeOut(0)
+					}
+					
+					var top = $(document).scrollTop();
+					if(top > $(window).height()){
+						$('.scrolltop').fadeIn()
+					}else{
+						$('.scrolltop').fadeOut(0)
+					}
+				})
+				
+				//返回顶部
+				$('.scrolltop').on('click',function(){
+					$('html,body').animate({
+			            scrollTop:0,
+			        },500)
+				});
+			})
+		</script>
+	</body>
+
+</html>

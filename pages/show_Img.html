@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>展厅-展馆美图</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+		<script src="../commit/js/jquery-3.3.1.js"></script>
+		
+		<link rel="stylesheet" href="../commit/css/base.css">
+		<link rel="stylesheet" href="../commit/css/header.css">
+		<link rel="stylesheet" href="../css/museum/mus_second.css">
+		<link rel="stylesheet" href="../commit/css/footer.css">
+		<style type="text/css">
+			.lanrenzhijia .title-list>p {
+				left: auto !important;
+			}
+			
+			.banner {
+				height: 600px;
+				background: url("../img/展馆美图.jpg") no-repeat center;
+			}
+			.lanrenzhijia{
+				overflow: hidden;
+			}
+			.introduce ul{
+				display: inherit;
+				flex-direction: inherit;
+			}
+			.introduce ul li{
+				margin: 0 auto;
+			}
+			.introduce .text{
+				display: inline-block;
+				width: 45%;
+				margin: 20px;
+				font-size: 20px;
+				color: #101010;
+			}
+			.introduce img{
+				display: inline-block;
+				margin: 0 auto;
+			}
+			.introduce > div{
+				width: 100%;
+			}
+			.introduce > div > div:nth-of-type(2n){
+				flex-direction: row-reverse;
+			}
+			.introduce > div:nth-of-type(1){
+				margin-top: 0px;
+			}
+			.introduce > div:nth-of-type(1):hover{
+				margin-top: 0px;
+			}
+			#gallery-wrapper {
+				position: relative;
+			}
+			img.thumb {
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+			}
+			.white-panel {
+				position: absolute;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--header start-->
+			<div class="header center" id="header">
+				<div class="header_left">
+					<h1><img src="../img/佛缘之路logo.png"/></h1>
+				</div>
+				<nav class="header_right">
+					<ul class="center">
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="consult.html">资讯</a>
+						</li>
+						<li>
+							<a href="museum.html">馆藏</a>
+						</li>
+						<li>
+							<a href="wenCreative.html">文创</a>
+						</li>
+						<li>
+							<a href="activity.html">活动</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!--header end-->
+			<!--banner start-->
+			<div class="banner"></div>
+			<!--banner end-->
+			<!--选项卡开始-->
+			<div class="lanrenzhijia">
+				<div class="title cf">
+					<ul class="title-list center">
+						<li id="55" class="tabs_one center on">
+							展馆美图
+						</li>
+						<p></p>
+					</ul>
+				</div>
+				<div class="product-wrap">
+					<div class="product introduce show">
+						<div id="gallery-wrapper">
+						</div>
+					</div>
+					<p class="tishi" id="more">没有更多了</p>
+					<p class="tishi" id="loading">正在加载...</p>
+				</div>
+			</div>
+			<!--选项卡结束-->
+			<!--尾部开始-->
+			<div class="footer">
+				<div class="foot_top">
+					<div class="top_nav center">
+						<p>友情链接：</p>
+						<a href="https://fo.ifeng.com/" target="_blank"> 凤凰佛教 </a>
+						<a href="http://www.fblife.com/" target="_blank"> 越野e族 </a>
+						<a href="https://new.qq.com/ch/cul_ru/" target="_blank"> 腾讯新闻 </a>
+						<a href="http://fo.sina.com.cn/" target="_blank"> 新浪佛学 </a>
+						<a href="http://www.fobao.cn/" target="_blank"> 佛宝网 </a>
+					</div>
+				</div>
+				<div class="foot_bottom center">
+					<dl>
+						<dt>发起单位</dt>
+						<dd>
+							<a>中国生物多样性保护与绿色发展基金会</a>
+						</dd>
+						<dd>
+							<a>蓝毗尼发展委员会</a>
+						</dd>
+						<dd>
+							<a>深圳市我有爱文化传播有限公司</a>
+						</dd>
+						<dd>
+							<a>凤凰网佛教频道</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>关于我们</dt>
+						<dd>
+							<a>佛缘之路-朝圣祈福万里行</a>
+						</dd>
+						<dd>
+							<a>佛缘之路-我心有爱</a>
+						</dd>
+						<dd>
+							<a>联系我们</a>
+						</dd>
+						<dd>
+							<a>加入我们</a>
+						</dd>
+						<dd>
+							<a>朝圣路线</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>全程媒体报道</dt>
+						<dd>
+							<a>凤凰网佛教频道</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="last">关注我们</dt>
+						<dd>
+							<div>
+								<img src="../img/订阅号.jpg" />
+								<a>佛缘之路订阅号</a>
+							</div>
+							<!--<div>
+								<img src="../../img/服务号.jpg"/>
+								<a>佛缘之路服务号</a>
+							</div>-->
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!--尾部结束-->
+		</div>
+		<script src="../js/consult/Tabs.js"></script>
+		<script src="../js/pinterest_grid.js"></script>
+		<script src="../js/show_img.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#gallery-wrapper").pinterest_grid({
+					no_columns: 4,  //网格布局一行的列数
+	                padding_x: 10,
+	                padding_y: 10,  //网格在Y轴方向的padding值
+	                margin_bottom: 50,  //网格底部的margin值
+	                single_column_breakpoint: 700   //指定在视口多大时一行只显示一个网格
+				});
+				
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,108 @@
+body{
+	padding: 0;
+}
+#header{
+	position: relative;
+}
+.main{
+	width: 100%;
+	background:#ececec;
+}
+/*================banner style=============*/
+.banner{
+	width: 100%;
+	height:650px;
+	background: url(../img/馆藏.jpg) no-repeat center;
+	background-size:cover;
+}
+/*===========mainbox style====================*/
+.mainbox{
+	width: 1000px;
+	margin: 0 auto 130px;
+}
+.mainbox > div{
+	width: 212px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: hidden;
+}
+.mainbox > div i{
+	display: block;
+	width: 86px;
+	height: 86px;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.mainbox > div:nth-of-type(1) i{
+	background: url("../img/collectIndexImg.png") no-repeat 0px 0px;
+}
+.mainbox > div:nth-of-type(2) i{
+	background: url("../img/collectIndexImg.png") no-repeat -86px 0px;
+}
+.mainbox > div:nth-of-type(3) i{
+	background: url("../img/collectIndexImg.png") no-repeat -258px 0px;
+}
+.mainbox > div:nth-of-type(4) i{
+	background: url("../img/collectIndexImg.png") no-repeat -430px 0px;
+}
+
+.mainbox > div:nth-of-type(1){
+	margin-top: 100px;
+	transition:.3s;
+}
+.mainbox > div:nth-of-type(1):hover{
+	margin-top: 70px;
+}
+.mainbox > div:nth-of-type(1):hover i{
+	background: url("../img/collectIndexImg.png") no-repeat 0px -86px;
+}
+
+.mainbox > div:nth-of-type(2){
+	margin-top: 0;
+	transition:.3s;
+}
+.mainbox > div:nth-of-type(2):hover{
+	margin-top: -30px;
+}
+.mainbox > div:nth-of-type(2):hover i{
+	background: url("../img/collectIndexImg.png") no-repeat -86px -86px;
+}
+
+.mainbox > div:nth-of-type(3){
+	margin-top: 100px;
+	transition:.3s;
+}
+.mainbox > div:nth-of-type(3):hover{
+	margin-top: 70px;
+}
+.mainbox > div:nth-of-type(3):hover i{
+	background: url("../img/collectIndexImg.png") no-repeat -258px -86px;
+}
+
+.mainbox > div:nth-of-type(4){
+	margin-top: 0px;
+	transition:.3s;
+}
+.mainbox > div:nth-of-type(4):hover{
+	margin-top: -30px;
+}
+.mainbox > div:nth-of-type(4):hover i{
+	background: url("../img/collectIndexImg.png") no-repeat -430px -86px;
+}
+.mainbox > div img{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+.mainbox > div p{
+	text-align: center;
+	margin: 15px 0;
+	font-size: 20px;
+}
+.hr{
+	width: 100%;
+	height: 5px;
+	background: #fff;
+}

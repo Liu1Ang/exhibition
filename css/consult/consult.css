@@ -1,0 +1,281 @@
+body {
+	padding: 0;
+}
+
+#header {
+	position: relative;
+}
+
+.main {
+	width: 100%;
+	background: #fff;
+}
+
+
+/*================banner style=============*/
+
+.banner {
+	width: 100%;
+	height: 650px;
+	background: url(../../img/资讯-.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.hide {
+	display: none;
+}
+
+
+/*===================lanrenzhijia style=============*/
+
+.lanrenzhijia {
+	width: 100%;
+}
+
+.lanrenzhijia .center {
+	justify-content: space-around;
+}
+
+.lanrenzhijia .title {
+	height: 130px;
+	border-bottom: 4px solid #f2f0f3;
+	background: #f4f4f4;
+}
+
+.lanrenzhijia .title ul {
+	position: relative;
+	height: 100%;
+	margin: 0 360px;
+}
+
+.lanrenzhijia .title li {
+	height: 100%;
+	width: 25%;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+.lanrenzhijia .title-list>p {
+	position: absolute;
+	width: 25%;
+	left: 0;
+	bottom: -4px;
+	border-bottom: 4px solid #E51C23;
+	overflow: hidden;
+}
+
+.lanrenzhijia .title .on {
+	color: #E51C23;
+}
+
+.lanrenzhijia .product-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 66px 0px;
+	min-height: 600px;
+}
+
+.product {
+	display: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.show {
+	display: block;
+}
+
+.introduce {
+	padding-top: 4px;
+}
+
+.introduce>div>div {
+	padding: 42px 0;
+}
+
+.introduce .center {
+	align-items: flex-start;
+}
+
+.introduce .text {
+	display: inline-block;
+	width: 45%;
+	margin: 0 20px;
+	font-size: 24px;
+	color: #101010;
+	line-height: 42px;
+}
+
+.introduce i {
+	display: inline-block;
+	width: 543px;
+	height: 327px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.introduce>div>div:nth-of-type(2n) {
+	flex-direction: row-reverse;
+}
+
+
+/*最新动态*/
+
+.dynamic {
+	position: relative;
+}
+
+.dynamic .dy_show {
+	display: block;
+}
+
+.dynamic .news_list li {
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	/*padding: 0 40px;*/
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	color: #b0b0b0;
+	cursor: pointer;
+}
+
+.dynamic .news_list li time {
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.dynamic .news_list li time span {
+	font-size: 28px;
+	font-weight: bold;
+	color: #101010;
+}
+
+.dynamic .news_list li p {
+	width: 70%;
+	display: inline-block;
+}
+
+.dynamic .news_list li:hover p {
+	color: #f5ac37;
+}
+
+.dynamic .center {
+	justify-content: center;
+}
+
+.dynamic .pageTest {
+	margin-top: 20px;
+}
+
+
+/*分页*/
+
+.dynamic .page_div button {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	margin: 0 5px;
+	background: #e4e4e4;
+	cursor: pointer;
+	border: 0;
+	outline: none;
+	font-family: "黑体";
+	font-size: 16px;
+}
+
+#firstPage,
+#lastPage,
+#nextPage,
+#prePage {
+	width: 70px;
+}
+
+#nextPage,
+#prePage {
+	width: 70px
+}
+
+.dynamic .page_div .current {
+	background: #f5ac37;
+	color: #fff;
+}
+
+
+/* 页面数量 */
+
+.dynamic .totalPages {
+	margin: 0 10px
+}
+
+.dynamic .totalPages span,
+.dynamic .totalSize span {
+	color: #0073A9;
+	margin: 0 5px
+}
+
+
+/*button禁用*/
+
+.dynamic .page_div button:disabled {
+	opacity: .5;
+	cursor: no-drop
+}
+
+
+/*动态详情*/
+
+.list_xq {
+	width: 100%;
+	display: none;
+}
+
+.list_xq h2 {
+	line-height: 40px;
+}
+
+.list_xq p {
+	line-height: 25px;
+	color: #888c90;
+}
+
+.list_xq article {
+	margin: 20px 0;
+	line-height: 25px;
+}
+
+.list_xq article img {
+	display: block;
+	width: 70%;
+	margin: 20px auto;
+}
+
+
+/*开放时间*/
+
+.dispark_mes {
+	color: #101010;
+	padding-top: 15px;
+}
+
+.dispark_mes h4,
+.dispark_mes h5 {
+	line-height: 58px;
+	font-size: 20px;
+}
+
+.dispark_mes p {
+	line-height: 30px;
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+@media screen and (max-width:1366px) {
+	.lanrenzhijia .title ul {
+		margin: 0 20%;
+	}
+}
